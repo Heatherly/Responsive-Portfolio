@@ -1,0 +1,273 @@
+
+html {
+  height: 100%;
+}
+
+
+body {
+  	margin: 0 auto;
+  	padding: 0;
+	background-image: url("../images/texturetastic_gray.png");
+	background-repeat: repeat;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 100%;
+	color: #777777;
+	line-height: 1;
+	}
+
+
+/*GLOABAL TEXT STYLING */
+h1 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 26px;
+	font-weight: bold;
+	margin: 15px;
+	}
+
+h2 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 16pt;
+	color: #4aaaa5;
+	font-weight: bold;
+	padding: 10px;
+	}
+
+p, li {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 1.5;
+	font-size: 16px;
+	color: #777777;
+	}
+
+
+/*HEADING AREA*/
+/* I needed to place the styling for #head before .topWrapper, because the class topWrapper was overwriting the #name's styling! */
+
+#name {   /*This is the where my name is at the top of each page*/
+	background-color: #4aaaa5;
+	padding: 15px;
+	width: 220px;
+	float: left;
+	text-align: center;
+	color: #ffffff;
+	}
+
+.topWrapper {
+	background-color: #ffffff;
+	overflow: auto;
+	margin: 0 auto;
+	padding: 0;
+	}
+
+.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
+	background-color: #ffffff;
+	width: 960px;
+	overflow: auto;
+	margin: 0 auto;
+
+	}
+
+/*Navigation area styling*/
+nav {
+	float: right;
+	margin-top: 20px;
+	display: block;
+	vertical-align: baseline;
+	}
+
+ul {
+	display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+	}
+
+li {
+    display: inline;
+    padding: 10px;
+    list-style: none;
+    }
+  
+li a {
+    text-decoration: none;
+    color: #777777;
+    }
+
+.topBorder {
+	border: 1px solid #cccccc;
+	margin: 0 auto;
+	}
+
+/*PAGE CONTENT*/
+.content {
+	clear: both;
+	width: 960px;
+	margin: 30px auto 130px; /*added large bottom marging to help with "sticky" footer not overlapping on long page content*/
+	overflow: auto;
+	min-height: 100%;
+	}
+
+.content h1 {
+	color: #4aaaa5;
+	padding-bottom: 20px;
+	border-bottom: 3px solid #cccccc;
+	margin: 20px 0;
+	}
+
+/*MAIN SECTION AREA*/
+#contactMe {
+	width: 588px;
+	float: left;
+	background-color: #ffffff;
+	padding: 30px;
+	border: 1px solid #cccccc;
+	}
+
+/*About Me and image styling*/
+
+#aboutMe {
+	width: 588px;
+	float: left;
+	background-color: #ffffff;
+	padding: 30px;
+	border: 1px solid #cccccc;
+	}
+
+.profilePic {
+	float: left;
+	margin: 0 20px 10px 0px;
+	border: 1px solid #cccccc;
+	width: 200px;
+	}
+
+/*My Portfolio image and banner styling*/
+
+#myPortfolio {
+	width: 588px;
+	float: left;
+	background-color: #ffffff;
+	padding: 30px;
+	border: 1px solid #cccccc;
+	overflow: auto;
+	}
+
+.picLeft {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.picRight {
+	position: relative;
+	float: right;
+	margin-bottom: 20px;
+}
+
+.portfolioBanner {
+	position: absolute;
+	right: 0px;
+	bottom: 10px;
+	width: 270px;
+	background-color: #4aaaa5;
+	text-align: center;
+	padding: 0px;
+	}
+
+.portfolioBanner h3, h3 a {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 16pt;
+	color: #ffffff;
+	font-weight: normal;
+	padding: 20px;
+	margin: 0 10px;
+
+	text-decoration: none;
+		font-weight: bold;
+	}
+
+/*Contact Me form styling*/
+
+input, textarea {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #ccc;
+    font-size: 14px;
+}
+
+#submitBtn {
+	background-color: #4aaaa5;
+	padding: 10px;
+	width: 100px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	}
+
+/* ASIDE SECTION AREA*/
+aside {
+	float: right;
+	width: 218px;
+	padding: 25px;
+	margin: 0px;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+aside h2 {
+	color: #4aaaa5;
+	padding: 10px 10px 20px 10px;
+	border-bottom: 1px solid #cccccc;
+	margin: 10px 0 20px 0;
+}
+.icon {
+	width: 60px;
+	border-radius: 5px;
+}
+
+/*Equidistance object styling found on CSS-Tricks.com*/
+	
+#iconContainer {
+  height: 60px;
+  text-align: justify;
+  min-width: 100px;
+}
+
+#iconContainer div {
+  height: 25px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#iconContainer:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+
+/*FOOTER AREA*/
+footer {
+  	width: 100%;
+  	background-color: #666666;
+  	height: 93px;
+  	position: fixed;
+  	bottom: 0;
+  	margin-top: 20px;
+  	border-top: 7px solid #4aaaa5;
+  	text-align: center;
+  	z-index: 1;
+	}
+
+#footerText{
+  	color: #cccccc;
+  	font-size: 12px;
+  	padding: 20px;
+	}
