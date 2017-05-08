@@ -258,11 +258,11 @@ aside h2 {
 footer {
   	width: 100%;
   	background-color: #666666;
-  	height: 93px;
+  	height: 95px;
   	position: fixed;
   	bottom: 0;
   	margin-top: 20px;
-  	border-top: 7px solid #4aaaa5;
+  	border-top: 5px solid #4aaaa5;
   	text-align: center;
   	z-index: 1;
 	}
@@ -274,133 +274,132 @@ footer {
 	}
 
 
-/*RESPONSIVE DESIGN ELEMENTS */
+/*////////////////////*RESPONSIVE DESIGN ELEMENTS//////////////////////////// */
 
 @media screen and (max-width: 640px) {
 
 /*HEADING AREA*/
 /* I needed to place the styling for #head before .topWrapper, because the class topWrapper was overwriting the #name's styling! */
+		body {
+			width: auto;
+			}
 
-p {
-	margin-top: 10px;
-}
+		p {
+			margin-top: 10px;
+			}
 
-#name {   /*This is the where my name is at the top of each page*/
-	background-color: #4aaaa5;
-	padding: 15px;
-	width: inherit;
-	float: none;
-	text-align: center;
-	color: #ffffff;
-	}
+		#name {   /*This is the where my name is at the top of each page*/
+			padding: 15px;
+			width: inherit;
+			float: none;
+			}
 
-.topWrapper {
-	background-color: #ffffff;
-	overflow: auto;
-	margin: 0 auto;
-	padding: 0;
-	}
+		.topWrapper {
+			background-color: #ffffff;
+			overflow: auto;
+			margin: 0 auto;
+			padding: 0;
+			}
 
-.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
-	background-color: #ffffff;
-	width: 620px;
-	overflow: auto;
-	margin: 0 auto;
+		.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
+			background-color: #ffffff;
+			overflow: auto;
+			margin: 0 auto;
+			width: auto;
+			}
 
-	}
+		/*Navigation area styling*/
+		nav {
+			float: none;
+			display: inline-block;
+			vertical-align: baseline;
+			text-align: center;
+			margin-top: 0;
+			}
 
-/*Navigation area styling*/
-nav {
-	float: none;
-	display: inline-block;
-	vertical-align: baseline;
-	text-align: center;
-	min-width: 620px;
-	margin-top: 0;
-	}
+		ul {
+			display: inline-block;
+		    }
 
-ul {
-	display: inline-block;
-    }
+		li {
+		    display: inline;
+		    padding: 0 35px;
+		    list-style: none;
+		    }
 
-li {
-    display: inline;
-    padding: 0 35px;
-    list-style: none;
-    }
+		/*PAGE CONTENT*/
+		/* Do I need to accomidate scroll bars into content width calculations?*/
 
-/*PAGE CONTENT*/
-/* Do I need to accomidate scroll bars into content width calculations?*/
+		.content {
+			clear: both;
+			width: 580px;
+			margin: 20px 20px 60px;
+			overflow: hidden;
+			}
 
-.content {
-	clear: both;
-	width: 600px;
-	margin-bottom: 80px;
-	}
+		.content h1 {
+			color: #4aaaa5;
+			margin: 0 0 10px;
+			}
 
-.content h1 {
-	color: #4aaaa5;
-	margin: 0 0 10px;
-	}
+		/*MAIN SECTION AREA*/
 
-/*MAIN SECTION AREA*/
+		/*About Me and image styling*/
 
-/*About Me and image styling*/
+		#aboutMe {
+			width: auto;
+			background-color: #ffffff;
+			padding: 25px;
+			border: 1px solid #cccccc;
+			float: none;
+			}
 
-#aboutMe {
-	width: 548px;
-	float: left;
-	background-color: #ffffff;
-	padding: 25px;
-	border: 1px solid #cccccc;
-	}
+		.profilePic {
+			float: none;
+			align-items: center;
+			width: 100%;
+			margin: 20px 0 0;
+			}
 
-.profilePic {
-	float: none;
-	align-items: center;
-	width: 100%;
-	margin: 20px 0 0;
-	border: 1px solid #cccccc;
-	}
+		/* ASIDE SECTION AREA*/
+		aside {
+			float: none;
+			width: auto;
+			background-color: #ffffff;
+			padding: 25px;
+			border: 1px solid #cccccc;
+			margin: 20px auto;
+			}
 
-/* ASIDE SECTION AREA*/
-aside {
-	clear: both;
-	width: 548px;
-	margin: 10px auto;
-	}
+		aside h2 {
+			color: #4aaaa5;
+			padding: 0px 10px 20px 0;
+			border-bottom: 1px solid #cccccc;
+			margin: 0 0 20px;
+			}
 
-aside h2 {
-	color: #4aaaa5;
-	padding: 0px 10px 20px 10px;
-	border-bottom: 1px solid #cccccc;
-	margin: 0 0 20px;
-	}
+		.icon {
+			margin: 0 10px 0 0;
+			}
 
-.icon {
-	margin: 0 10px;
-	}
-
-#iconContainer {
-  text-align: left;
-}
+		#iconContainer {
+			text-align: left;
+			}
 
 
-/*FOOTER AREA*/
-footer {
-  	height: 43px;
-  	border-bottom: 10px solid #ffffff;
-  	text-align: center;
-  	z-index: 1;
-	}
+		/*FOOTER AREA*/
+		footer {
+		  	height: 45px;
+		  	text-align: center;
+		  	z-index: 1;
+			}
 
-#footerText{
-  	color: #cccccc;
-  	font-size: 12px;
-  	padding: 5px;
-	}
+		#footerText{
+		  	font-size: 12px;
+		  	padding: 5px;
+			}
 
-}
+		}
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
 	body {
