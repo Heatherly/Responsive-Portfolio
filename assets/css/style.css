@@ -284,10 +284,6 @@ footer {
 			width: auto;
 			}
 
-		p {
-			margin-top: 10px;
-			}
-
 		#name {   /*This is the where my name is at the top of each page*/
 			padding: 15px;
 			width: inherit;
@@ -328,11 +324,10 @@ footer {
 		    }
 
 		/*PAGE CONTENT*/
-		/* Do I need to accomidate scroll bars into content width calculations?*/
 
 		.content {
 			clear: both;
-			width: 580px;
+			width: 600px;
 			margin: 20px 20px 60px;
 			overflow: hidden;
 			}
@@ -348,9 +343,6 @@ footer {
 
 		#aboutMe {
 			width: auto;
-			background-color: #ffffff;
-			padding: 25px;
-			border: 1px solid #cccccc;
 			float: none;
 			}
 
@@ -360,6 +352,36 @@ footer {
 			width: 100%;
 			margin: 20px 0 0;
 			}
+
+		/*My Portfolio image and banner styling*/
+
+		#myPortfolio {
+			width: auto;
+			float: none;
+			}
+
+		.picLeft, .picRight {
+			position: relative;
+			float: left;
+			width: 100%;
+			margin: 20px 0;
+		}
+		
+		#myPortfolio img {
+			width: 100%;
+		}
+		.portfolioBanner {
+			width: inherit;
+			}
+
+
+		/*Contact Me form styling*/
+
+		#contactMe {
+			width: auto;
+			float: none;
+			}
+
 
 		/* ASIDE SECTION AREA*/
 		aside {
