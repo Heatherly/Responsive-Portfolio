@@ -1,10 +1,12 @@
 
 html {
   height: 100%;
+  width: 100%;
 }
 
 
 body {
+	width: auto;
   	margin: 0 auto;
   	padding: 0;
 	background-image: url("../images/texturetastic_gray.png");
@@ -291,14 +293,12 @@ footer {
 			}
 
 		.topWrapper {
-			background-color: #ffffff;
 			overflow: auto;
 			margin: 0 auto;
 			padding: 0;
 			}
 
 		.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
-			background-color: #ffffff;
 			overflow: auto;
 			margin: 0 auto;
 			width: auto;
@@ -333,7 +333,6 @@ footer {
 			}
 
 		.content h1 {
-			color: #4aaaa5;
 			margin: 0 0 10px;
 			}
 
@@ -387,16 +386,11 @@ footer {
 		aside {
 			float: none;
 			width: auto;
-			background-color: #ffffff;
-			padding: 25px;
-			border: 1px solid #cccccc;
 			margin: 20px auto;
 			}
 
 		aside h2 {
-			color: #4aaaa5;
 			padding: 0px 10px 20px 0;
-			border-bottom: 1px solid #cccccc;
 			margin: 0 0 20px;
 			}
 
@@ -424,15 +418,217 @@ footer {
 		}
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
-	body {
-		background-color: blue;
-	}
-	
-}
 
-@media screen and (min-width: 769px) and(max-width: 980px) {
-	body {
-		background-color: green;
-	}
+		/*HEADING AREA*/
+
+		body {
+			width: auto;
+			}
+
+		#name {   /*This is the where my name is at the top of each page*/
+			padding: 15px;
+			width: auto;
+			float: left;
+			}
+
+		.topWrapper {
+			overflow: auto;
+			margin: 0 auto;
+			padding: 0;
+			width: 100%;
+			}
+
+		.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
+			overflow: auto;
+			margin: 0 auto;
+			width: 728px;
+			}
+
+		/*PAGE CONTENT*/
+
+		.content {
+			width: 728px;
+			margin: 20px 20px 80px;
+			overflow: hidden;
+			}
+
+		.content h1 {
+			margin: 0 0 10px;
+			}
+
+		/*MAIN SECTION AREA*/
+
+		/*About Me and image styling*/
+
+		#aboutMe {
+			width: auto;
+			float: none;
+			}
+
+		/*My Portfolio image and banner styling*/
+
+		#myPortfolio {
+			width: auto;
+			float: none;
+			}
+
+		.picLeft, .picRight {
+			position: relative;
+			width: 48%;
+			margin: 20px 0;
+		}
+		
+		#myPortfolio img {
+			width: 100%;
+		}
+		.portfolioBanner {
+			width: 100%;
+			}
+
+
+		/*Contact Me form styling*/
+
+		#contactMe {
+			width: auto;
+			float: none;
+			}
+
+
+		/* ASIDE SECTION AREA*/
+		aside {
+			float: none;
+			width: auto;
+			margin: 20px auto;
+			}
+
+		aside h2 {
+			padding: 0px 10px 20px 0;
+			margin: 0 0 20px;
+			}
+
+		.icon {
+			margin: 0 10px 0 0;
+			}
+
+		#iconContainer {
+			text-align: left;
+			}
+
+
+		/*FOOTER AREA*/
+		footer {
+		  	height: 63px;
+		  	text-align: center;
+		  	z-index: 1;
+			}
+
+		#footerText{
+		  	font-size: 12px;
+		  	padding: 5px;
+			}
+
+		}
+
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+
+		/*HEADING AREA*/
+
+		body {
+			width: auto;
+			}
+
+		#name {   /*This is the where my name is at the top of each page*/
+			padding: 15px;
+			width: auto;
+			float: left;
+			}
+
+		.topWrapper {
+			overflow: auto;
+			margin: 0 auto;
+			padding: 0;
+			width: 100%;
+			}
+
+		.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
+			overflow: auto;
+			margin: 0 auto;
+			width: 740px;
+			}
+
+		/*PAGE CONTENT*/
+
+		.content {
+			clear:both;
+			width: 740px;
+			margin: 20px auto 120px;
+			overflow: auto;
+			min-height: 100%;
+			}
+
+		.content h1 {
+			margin: 0 0 10px;
+			}
+
+		/*MAIN SECTION AREA*/
+
+		/*About Me and image styling*/
+
+		#aboutMe {
+			width: 400px;
+/*			float: none;
+*/			}
+
+		.profilePic {
+			float: none;
+			clear:both;
+			align-items: center;
+			width: 100%;
+			margin: 10px auto;
+			}
 	
-}
+		/*My Portfolio image and banner styling*/
+
+		#myPortfolio {
+			width: auto;
+			float: none;
+			}
+
+		.picLeft, .picRight {
+			position: relative;
+			width: 48%;
+			margin: 20px 0;
+		}
+		
+		#myPortfolio img {
+			width: 100%;
+		}
+		.portfolioBanner {
+			width: 100%;
+			}
+
+
+		/*Contact Me form styling*/
+
+		#contactMe {
+			width: auto;
+			float: none;
+			}
+
+
+		/* ASIDE SECTION AREA*/
+		aside {
+			float: right;
+			width: auto;
+			margin: 0 auto;
+			}
+
+		aside h2 {
+			padding: 0px 10px 20px 0;
+			margin: 0 0 20px;
+			}
+
+
+
+
