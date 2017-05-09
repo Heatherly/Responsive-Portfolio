@@ -62,9 +62,13 @@ p, li {
 	padding: 0;
 	}
 
-.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
-	background-color: #ffffff;
+.content {
 	width: 960px;
+	}
+
+
+#topHeader{   /*sets the container width for #name so that it is inline with .content below */
+	background-color: #ffffff;
 	overflow: auto;
 	margin: 0 auto;
 
@@ -73,7 +77,7 @@ p, li {
 /*Navigation area styling*/
 nav {
 	float: right;
-	margin-top: 20px;
+	margin-top: 15px;
 	display: block;
 	vertical-align: baseline;
 	}
@@ -85,7 +89,7 @@ ul {
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
+    -webkit-padding-start: 0px;
 	}
 
 li {
@@ -105,15 +109,14 @@ li a {
 	}
 
 /*PAGE CONTENT*/
-.content {
+#main-content {
 	clear: both;
-	width: 960px;
 	margin: 30px auto 130px; /*added large bottom marging to help with "sticky" footer not overlapping on long page content*/
 	overflow: auto;
 	min-height: 100%;
 	}
 
-.content h1 {
+#main-content h1 {
 	color: #4aaaa5;
 	padding-bottom: 20px;
 	border-bottom: 3px solid #cccccc;
@@ -298,7 +301,11 @@ footer {
 			padding: 0;
 			}
 
-		.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
+		.content {
+			width: 100%;
+		}
+
+		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
 			overflow: auto;
 			margin: 0 auto;
 			width: auto;
@@ -307,34 +314,35 @@ footer {
 		/*Navigation area styling*/
 		nav {
 			float: none;
-			display: inline-block;
-			vertical-align: baseline;
-			text-align: center;
-			margin-top: 0;
+			width: 100%;
+			margin: 10px auto;
 			}
 
 		ul {
-			display: inline-block;
+		    margin: 0;
+		    display: flex;
+		    justify-content: space-around;
+		    padding: 0 10px;
 		    }
 
 		li {
 		    display: inline;
-		    padding: 0 35px;
 		    list-style: none;
+		    padding: 0;
 		    }
 
 		/*PAGE CONTENT*/
 
-		.content {
+		#main-content {
 			clear: both;
-			width: 600px;
-			margin: 20px 20px 60px;
-			overflow: hidden;
+			margin: 10px auto 60px;
+			overflow: auto;
 			}
 
-		.content h1 {
+		#main-content h1 {
 			margin: 0 0 10px;
 			}
+
 
 		/*MAIN SECTION AREA*/
 
@@ -342,6 +350,7 @@ footer {
 
 		#aboutMe {
 			width: auto;
+			margin: 20px;
 			float: none;
 			}
 
@@ -357,6 +366,7 @@ footer {
 		#myPortfolio {
 			width: auto;
 			float: none;
+			margin: 20px;
 			}
 
 		.picLeft, .picRight {
@@ -379,6 +389,7 @@ footer {
 		#contactMe {
 			width: auto;
 			float: none;
+			margin: 20px;
 			}
 
 
@@ -386,7 +397,7 @@ footer {
 		aside {
 			float: none;
 			width: auto;
-			margin: 20px auto;
+			margin: 20px;
 			}
 
 		aside h2 {
@@ -431,28 +442,31 @@ footer {
 			float: left;
 			}
 
+		.content {
+			width: 100%;
+		}
+
 		.topWrapper {
 			overflow: auto;
 			margin: 0 auto;
-			padding: 0;
-			width: 100%;
+			padding: 0 20px;
+			width: auto;
 			}
 
-		.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
+		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
 			overflow: auto;
 			margin: 0 auto;
-			width: 728px;
 			}
 
 		/*PAGE CONTENT*/
 
-		.content {
-			width: 728px;
-			margin: 20px 20px 80px;
-			overflow: hidden;
+		#main-content {
+			clear: both;
+			margin: 10px auto 80px;
+			overflow: auto;
 			}
 
-		.content h1 {
+		#main-content h1 {
 			margin: 0 0 10px;
 			}
 
@@ -463,6 +477,7 @@ footer {
 		#aboutMe {
 			width: auto;
 			float: none;
+			margin: 20px;
 			}
 
 		/*My Portfolio image and banner styling*/
@@ -470,6 +485,7 @@ footer {
 		#myPortfolio {
 			width: auto;
 			float: none;
+			margin: 20px;
 			}
 
 		.picLeft, .picRight {
@@ -491,6 +507,7 @@ footer {
 		#contactMe {
 			width: auto;
 			float: none;
+			margin:20px;
 			}
 
 
@@ -498,7 +515,7 @@ footer {
 		aside {
 			float: none;
 			width: auto;
-			margin: 20px auto;
+			margin: 20px;
 			}
 
 		aside h2 {
@@ -539,10 +556,14 @@ footer {
 			}
 
 		#name {   /*This is the where my name is at the top of each page*/
-			padding: 15px;
+			padding: 25px;
 			width: auto;
 			float: left;
 			}
+
+		.content {
+			width: 740px;
+		}
 
 		.topWrapper {
 			overflow: auto;
@@ -551,17 +572,15 @@ footer {
 			width: 100%;
 			}
 
-		.topWrapper #topHeader{   /*sets the container width for #name so that it is inline with .content below */
+		#topHeader{   /*sets the container width for #name so that it is inline with .content below */
 			overflow: auto;
 			margin: 0 auto;
-			width: 740px;
 			}
 
 		/*PAGE CONTENT*/
 
-		.content {
+		#main-content {
 			clear:both;
-			width: 740px;
 			margin: 20px auto 120px;
 			overflow: auto;
 			min-height: 100%;
@@ -577,8 +596,7 @@ footer {
 
 		#aboutMe {
 			width: 400px;
-/*			float: none;
-*/			}
+			}
 
 		.profilePic {
 			float: none;
@@ -591,13 +609,12 @@ footer {
 		/*My Portfolio image and banner styling*/
 
 		#myPortfolio {
-			width: auto;
-			float: none;
+			width: 400px;
 			}
 
 		.picLeft, .picRight {
-			position: relative;
-			width: 48%;
+			float: none;
+			width: 100%;
 			margin: 20px 0;
 		}
 		
@@ -612,8 +629,7 @@ footer {
 		/*Contact Me form styling*/
 
 		#contactMe {
-			width: auto;
-			float: none;
+			width: 400px;
 			}
 
 
